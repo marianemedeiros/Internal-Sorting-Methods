@@ -1,0 +1,12 @@
+ORDEM DE COMANDOS
+
+# 1º roda o gerando.c . Este algoritmo irá gerar os arquivos de 1000, 10 000 e 100 000 elemetos randomicamente.
+	gcc gerando.c -o gera
+# 2º em seguida é necessário compilar as bibliotecas usadas pelo aps_parte01.c, que são lendo.c e metodos_de_ordenação.c
+# lendo.c, passa os elementos dos arquivos para vetores.
+# metodos_de_ordenacao.c possui os nove metodos de ordenação.
+# gcc -c lendo.c -lrt
+# gcc -c metodos_de_ordenacao.c -lrt
+# gcc -c aps_parte01.c -lrt
+# gcc -o aps metodos_de_ordenacao.o lendo.o aps_parte01.o -lrt
+# ./aps
